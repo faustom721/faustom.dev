@@ -3,6 +3,8 @@
 
 My website as a full stack software developer.
 
+Visit the website at [faustom.dev](https://faustom.dev)
+
 
 ## Tech Stack
 - **Astro** as the project framework. (https://astro.build/)
