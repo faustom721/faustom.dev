@@ -1,0 +1,25 @@
+---
+export interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+---
+
+<header>
+  <h1>{title}</h1>
+  <nav>
+    <ul>
+      <li><a href='/'>Home</a></li>
+      <li><a href='/about'>About</a></li>
+      <li><a href='/contact'>Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  h2 {
+    background: linear-gradient(to right, #001aff, #00ff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+</style>
