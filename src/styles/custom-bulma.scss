@@ -1,0 +1,14 @@
+// _custom-variables.scss
+$primary: #001aff !default;
+$info: #00ff00 !default;
+$success: #00ff00 !default;
+$warning: #ffcc00 !default;
+$danger: #ff0000 !default;
+
+@forward 'bulma/bulma' with (
+  $primary: $primary,
+  $info: $info,
+  $success: $success,
+  $warning: $warning,
+  $danger: $danger
+);

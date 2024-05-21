@@ -6,7 +6,7 @@ const { title } = Astro.props;
 ---
 
 <header>
-  <h1>{title}</h1>
+  <h1 class='title is-1 has-text-primary'>{title}</h1>
   <nav>
     <ul>
       <li><a href='/'>Home</a></li>
@@ -16,10 +16,4 @@ const { title } = Astro.props;
   </nav>
 </header>
 
-<style>
-  h2 {
-    background: linear-gradient(to right, #001aff, #00ff00);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-</style>
+<style></style>
