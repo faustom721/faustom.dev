@@ -1,0 +1,32 @@
+@use './variables';
+
+// Override global Sass variables from the /utilities folder for customizing Bulma
+@use 'bulma/sass/utilities' with (
+  $family-primary: '"Nunito", sans-serif',
+  // $family-secondary: '"Jacquard 12", system-ui"',
+  $grey-dark: variables.$grey-dark,
+  $grey-light: variables.$grey-light,
+  $primary: variables.$neon-blue,
+  $link: variables.$neon-pink,
+  $control-border-width: 2px
+);
+
+// Override Sass variables from the /form folder for customizing Bulma Form components
+@use 'bulma/sass/form' with (
+  $input-shadow: none
+);
+
+// Import componentns we need from Bulma
+@forward 'bulma/sass/base';
+@forward 'bulma/sass/elements/button';
+@forward 'bulma/sass/elements/icon';
+@forward 'bulma/sass/elements/content';
+@forward 'bulma/sass/elements/title';
+@forward 'bulma/sass/layout/footer';
+
+// Import the themes so that all CSS variables have a value
+@forward 'bulma/sass/themes';
+
+// Import the Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jacquard+12&display=swap');
