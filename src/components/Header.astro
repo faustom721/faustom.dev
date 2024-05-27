@@ -1,17 +1,46 @@
-<header class='custom-header'>
-  <h1 class='title is-1 has-text-secondary'>Fausto Márquez</h1>
-  <h2 class='subtitle is-3 has-text-secondary'>
-    tech lead | full-stack web developer
+<header>
+  <h1 class='title is-1 has-text-primary big-shadow'>
+    <span>Fausto Márquez</span>
+  </h1>
+  <h2 class='subtitle is-5 has-text-secondary big-shadow'>
+    <span class='highlight'>tech lead | full-stack web developer</span>
   </h2>
+  <figure class='image is-128x128'>
+    <img
+      class='is-rounded'
+      src='https://bulma.io/assets/images/placeholders/128x128.png'
+    />
+  </figure>
 </header>
 
 <style lang='scss'>
   @use '../styles/variables.scss';
 
   header {
-    width: 100%;
-    height: 100px;
-    background: variables.$grey-lighter;
-    box-shadow: 0px 16px 44px 0px rgba(255, 30, 30, 0.75);
+    width: fit-content;
+    span {
+      background-color: variables.$neon-yellow;
+      border-radius: 5px;
+    }
+    h1,
+    h2 {
+      margin-left: -5px;
+    }
+    h1 {
+      span {
+        padding: 12px 0.8em 0 12px;
+      }
+    }
+    h2 {
+      span {
+        padding: 0 1em 0.5em 12px;
+      }
+    }
+
+    figure {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
   }
 </style>

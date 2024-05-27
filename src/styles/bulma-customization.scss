@@ -20,6 +20,7 @@
 @forward 'bulma/sass/base';
 @forward 'bulma/sass/elements/button';
 @forward 'bulma/sass/elements/icon';
+@forward 'bulma/sass/elements/image';
 @forward 'bulma/sass/elements/content';
 @forward 'bulma/sass/elements/title';
 @forward 'bulma/sass/layout/footer';
@@ -29,4 +30,3 @@
 
 // Import the Google Font
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
-// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jacquard+12&display=swap');
