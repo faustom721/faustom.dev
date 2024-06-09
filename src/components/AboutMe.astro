@@ -1,0 +1,31 @@
+---
+interface Props {
+  alignment: 'left' | 'right';
+}
+
+const { alignment } = Astro.props;
+---
+
+<section class={`colored-container ${alignment}-sided .neon-border`}>
+  <h1 class='title is-3'>About Me</h1>
+  <p>
+    I love well implemented technology at the service of society.
+    <br />
+    I'm always seeking for new interesting challenges from which to grow professionally;
+    improving practices and learning new technologies.
+  </p>
+  <br />
+  <p>
+    As George Bernard Shaw once said: “The people who get on in this world are
+    the people who get up and look for the circumstances they want, and if they
+    can't find them, make them”. This insightful perspective fuels my passion
+    for continuous learning, pushing me to enhance my skills and evolve every
+    day.
+  </p>
+  <br />
+  <p>
+    I believe teamwork is always better than working alone. Things can be done
+    better and faster then. And each team member has the chance to enrich itself
+    learning from the others' experience.
+  </p><p>I'm a fan of doing things right.</p>
+</section>

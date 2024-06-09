@@ -1,0 +1,279 @@
+---
+interface Props {
+  alignment: 'left' | 'right';
+  yearsOfExperience: number;
+}
+
+const yearsOfExperience = new Date().getFullYear() - 2018;
+
+const { alignment } = Astro.props;
+---
+
+<section class={`colored-container ${alignment}-sided`}>
+  <h1 class='title is-3'>Skills</h1>
+  <p>
+    I am a full-stack software developer with {yearsOfExperience} years of experience,
+    specializing in web development. With comprehensive expertise in end-to-end development
+    processes across multiple industry sectors, I have served as a technical leader
+    and embarked on several entrepreneurial ventures that I co-founded.
+  </p>
+  <p>
+    I possess good experience working with the following tools and technologies:
+  </p>
+  <div class='list-wrapper'>
+    <ul class='has-text-centered scrolling-list'>
+      <li>
+        <div>
+          <p class='icon is-size-2'>
+            <i class='devicon-python-plain'></i>
+          </p>
+          <p class='is-size-5'>Python</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class='icon is-size-2'>
+            <i class='devicon-javascript-plain'></i>
+          </p>
+          <p class='is-size-5'>JavaScript</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class='icon is-size-2'>
+            <i class='devicon-typescript-plain'></i>
+          </p>
+          <p class='is-size-5'>TypeScript</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class='icon is-size-2'>
+            <i class='devicon-astro-plain'></i>
+          </p>
+          <p class='is-size-5'>Astro</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class='icon is-size-2'>
+            <i class='devicon-html5-plain'></i>
+          </p>
+          <p class='is-size-5'>HTML5</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class='icon is-size-2'>
+            <i class='devicon-css3-plain'></i>
+          </p>
+          <p class='is-size-5'>CSS3</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class='icon is-size-2'>
+            <i class='devicon-sass-original'></i>
+          </p>
+          <p class='is-size-5'>Sass</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class='icon is-size-2'>
+            <i class='devicon-bootstrap-plain'></i>
+          </p>
+          <p class='is-size-5'>Bootstrap</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class='icon is-size-2'>
+            <i class='devicon-linux-plain'></i>
+          </p>
+          <p class='is-size-5'>Linux</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class='icon is-size-2'>
+            <i class='devicon-react-original'></i>
+          </p>
+          <p class='is-size-5'>React</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class='icon is-size-2'>
+            <i class='devicon-nodejs-plain'></i>
+          </p>
+          <p class='is-size-5'>Node.js</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class='icon is-size-2'>
+            <i class='devicon-mysql-original'></i>
+          </p>
+          <p class='is-size-5'>MySQL</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class='icon is-size-2'>
+            <i class='devicon-django-plain'></i>
+          </p>
+          <p class='is-size-5'>Django</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class='icon is-size-2'>
+            <i class='devicon-flask-original'></i>
+          </p>
+          <p class='is-size-5'>Flask</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class='icon is-size-2'>
+            <i class='devicon-insomnia-plain'></i>
+          </p>
+          <p class='is-size-5'>Insomnia</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class='icon is-size-2'>
+            <i class='devicon-bulma-plain'></i>
+          </p>
+          <p class='is-size-5'>Bulma</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class='icon is-size-2'>
+            <i class='devicon-nginx-original'></i>
+          </p>
+          <p class='is-size-5'>nginx</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class='icon is-size-2'>
+            <i class='devicon-jquery-plain'></i>
+          </p>
+          <p class='is-size-5'>Jquery</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class='icon is-size-2'>
+            <i class='devicon-redux-original'></i>
+          </p>
+          <p class='is-size-5'>Redux</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class='icon is-size-2'>
+            <i class='devicon-electron-original'></i>
+          </p>
+          <p class='is-size-5'>ElectronJS</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class='icon is-size-2'>
+            <i class='devicon-amazonwebservices-plain-wordmark'></i>
+          </p>
+          <p class='is-size-5'>AWS</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class='icon is-size-2'>
+            <i class='devicon-materialui-plain'></i>
+          </p>
+          <p class='is-size-5'>MaterialUI</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class='icon is-size-2'>
+            <i class='devicon-djangorest-plain'></i>
+          </p>
+          <p class='is-size-5'>Django Rest Framework</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class='icon is-size-2'>
+            <i class='devicon-git-plain'></i>
+          </p>
+          <p class='is-size-5'>Git</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class='icon is-size-2'>
+            <i class='devicon-postgresql-plain'></i>
+          </p>
+          <p class='is-size-5'>PostgreSQL</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class='icon is-size-2'>
+            <i class='devicon-docker-plain'></i>
+          </p>
+          <p class='is-size-5'>Docker</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class='icon is-size-2'>
+            <i class='devicon-github-original'></i>
+          </p>
+          <p class='is-size-5'>GitHub</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<style lang='scss'>
+  @import url('https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css');
+
+  .list-wrapper {
+    padding-top: 2em;
+    width: 100%;
+    overflow-x: hidden;
+    white-space: nowrap;
+
+    .scrolling-list {
+      display: flex;
+      animation: scroll 60s linear infinite;
+
+      li {
+        display: inline-block;
+
+        div {
+          width: 150px;
+        }
+      }
+    }
+    .scrolling-list li {
+      display: inline-block;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  }
+</style>

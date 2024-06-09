@@ -3,7 +3,7 @@
 
 body {
   width: 100%;
-  min-height: 100vh;
+  min-height: 110vh;
 
   $g: variables.$background 90deg, variables.$grey-dark 0;
   --g: #{$g};
@@ -14,5 +14,26 @@ body {
 }
 
 .big-shadow {
-  box-shadow: 0 0 3.5em 5em variables.$background;
+  box-shadow: 0 0 3.5em 2em variables.$background;
+}
+
+.colored-container {
+  @extend .big-shadow;
+  background: variables.$neon-yellow;
+  color: variables.$grey-dark;
+  padding: 2em;
+  border-radius: 1em;
+  margin: 2em;
+}
+
+.left-sided {
+  width: 65%;
+  float: left;
+  margin-left: 10%;
+}
+
+.right-sided {
+  width: 65%;
+  float: right;
+  margin-right: 10%;
 }
