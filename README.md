@@ -8,7 +8,7 @@ Visit the website at [faustom.dev](https://faustom.dev)
 
 ## Tech Stack
 - **Astro** as the project framework. (https://astro.build/)
-- **Bulma CSS** as the CSS framework with SASS preprocessing. (https://bulma.io/)
+- **TailwindCSS** for styling. (https://tailwindcss.com/). I use it as an Astro integration.
 
 ## Project Structure
 ```text
@@ -21,10 +21,7 @@ Visit the website at [faustom.dev](https://faustom.dev)
 │   ├── layouts/
 │   │   └── _all the layouts
 │   ├── pages/
-│   │   └── _all the pages_
-│   └── styles/
-│       ├── global.scss
-│       └── _all global styles_
+│       └── _all the pages_
 ├── astro.config.mjs
 ├── .gitignore
 ├── .prettierrc

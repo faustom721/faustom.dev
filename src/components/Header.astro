@@ -1,46 +1,19 @@
-<header>
-  <h1 class='title is-1 has-text-primary big-shadow'>
-    <span>Fausto Márquez</span>
+<header class="w-fit relative">
+  <h1 class="text-5xl font-bold text-blue-600 -ml-1">
+    <span class="inline-block bg-yellow-400 rounded px-3 py-3">
+      Fausto Márquez
+    </span>
   </h1>
-  <h2 class='subtitle is-5 has-text-secondary big-shadow'>
-    <span class='highlight'>tech lead | full-stack web developer</span>
+  <h2 class="text-xl text-gray-600 -ml-1">
+    <span class="inline-block bg-yellow-400 rounded px-4 py-2">
+      tech lead | full-stack web developer
+    </span>
   </h2>
-  <figure class='image is-128x128'>
+  <figure class="absolute top-0 right-0">
     <img
-      class='is-rounded'
-      src='https://bulma.io/assets/images/placeholders/128x128.png'
+      class="w-32 h-32 rounded-full"
+      src="https://bulma.io/assets/images/placeholders/128x128.png"
+      alt="Profile Picture"
     />
   </figure>
 </header>
-
-<style lang='scss'>
-  @use '../styles/variables.scss';
-
-  header {
-    width: fit-content;
-    span {
-      background-color: variables.$neon-yellow;
-      border-radius: 5px;
-    }
-    h1,
-    h2 {
-      margin-left: -5px;
-    }
-    h1 {
-      span {
-        padding: 12px 0.8em 0 12px;
-      }
-    }
-    h2 {
-      span {
-        padding: 0 1em 0.5em 12px;
-      }
-    }
-
-    figure {
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
-  }
-</style>
