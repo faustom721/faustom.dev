@@ -1,16 +1,9 @@
 ---
-interface Props {
-  alignment: 'left' | 'right';
-  yearsOfExperience: number;
-}
-
 const yearsOfExperience = new Date().getFullYear() - 2018;
-
-const { alignment } = Astro.props;
 ---
 
-<section class={`colored-container ${alignment}-sided`}>
-  <h1 class='title is-3'>Skills</h1>
+<section class='bg-white'>
+  <h1 class='text-3xl font-bold'>Skills</h1>
   <p>
     I am a full-stack software developer with {yearsOfExperience} years of experience,
     specializing in web development. With comprehensive expertise in end-to-end development
@@ -18,261 +11,275 @@ const { alignment } = Astro.props;
     and embarked on several entrepreneurial ventures that I co-founded.
   </p>
   <br />
-  <p><b>I possess experience working with the following technologies:</b></p>
-  <div class='list-wrapper'>
-    <ul class='has-text-centered scrolling-list'>
-      <li>
-        <div>
-          <p class='icon is-size-2'>
+  <p>
+    <strong
+      >I possess experience working with the following technologies:</strong
+    >
+  </p>
+  <div class='pt-8 w-full overflow-hidden whitespace-nowrap bg-white'>
+    <ul class='flex animate-scroll text-center'>
+      <!-- Technology Item Start -->
+      <li class='inline-block'>
+        <div class='w-[150px]'>
+          <p class='text-4xl'>
             <i class='devicon-python-plain'></i>
           </p>
-          <p class='is-size-5'>Python</p>
+          <p class='text-xl'>Python</p>
         </div>
       </li>
-      <li>
-        <div>
-          <p class='icon is-size-2'>
+      <!-- Technology Item -->
+      <li class='inline-block'>
+        <div class='w-[150px]'>
+          <p class='text-4xl'>
             <i class='devicon-javascript-plain'></i>
           </p>
-          <p class='is-size-5'>JavaScript</p>
+          <p class='text-xl'>JavaScript</p>
         </div>
       </li>
-      <li>
-        <div>
-          <p class='icon is-size-2'>
+      <!-- Technology Item -->
+      <li class='inline-block'>
+        <div class='w-[150px]'>
+          <p class='text-4xl'>
             <i class='devicon-typescript-plain'></i>
           </p>
-          <p class='is-size-5'>TypeScript</p>
+          <p class='text-xl'>TypeScript</p>
         </div>
       </li>
-      <li>
-        <div>
-          <p class='icon is-size-2'>
+      <!-- Technology Item -->
+      <li class='inline-block'>
+        <div class='w-[150px]'>
+          <p class='text-4xl'>
             <i class='devicon-astro-plain'></i>
           </p>
-          <p class='is-size-5'>Astro</p>
+          <p class='text-xl'>Astro</p>
         </div>
       </li>
-      <li>
-        <div>
-          <p class='icon is-size-2'>
+      <!-- Technology Item -->
+      <li class='inline-block'>
+        <div class='w-[150px]'>
+          <p class='text-4xl'>
             <i class='devicon-html5-plain'></i>
           </p>
-          <p class='is-size-5'>HTML5</p>
+          <p class='text-xl'>HTML5</p>
         </div>
       </li>
-      <li>
-        <div>
-          <p class='icon is-size-2'>
+      <!-- Continue adding technology items as per your original list -->
+      <!-- CSS3 -->
+      <li class='inline-block'>
+        <div class='w-[150px]'>
+          <p class='text-4xl'>
             <i class='devicon-css3-plain'></i>
           </p>
-          <p class='is-size-5'>CSS3</p>
+          <p class='text-xl'>CSS3</p>
         </div>
       </li>
-      <li>
-        <div>
-          <p class='icon is-size-2'>
+      <!-- Sass -->
+      <li class='inline-block'>
+        <div class='w-[150px]'>
+          <p class='text-4xl'>
             <i class='devicon-sass-original'></i>
           </p>
-          <p class='is-size-5'>Sass</p>
+          <p class='text-xl'>Sass</p>
         </div>
       </li>
-      <li>
-        <div>
-          <p class='icon is-size-2'>
+      <!-- Bootstrap -->
+      <li class='inline-block'>
+        <div class='w-[150px]'>
+          <p class='text-4xl'>
             <i class='devicon-bootstrap-plain'></i>
           </p>
-          <p class='is-size-5'>Bootstrap</p>
+          <p class='text-xl'>Bootstrap</p>
         </div>
       </li>
-      <li>
-        <div>
-          <p class='icon is-size-2'>
+      <!-- Linux -->
+      <li class='inline-block'>
+        <div class='w-[150px]'>
+          <p class='text-4xl'>
             <i class='devicon-linux-plain'></i>
           </p>
-          <p class='is-size-5'>Linux</p>
+          <p class='text-xl'>Linux</p>
         </div>
       </li>
-      <li>
-        <div>
-          <p class='icon is-size-2'>
+      <!-- React -->
+      <li class='inline-block'>
+        <div class='w-[150px]'>
+          <p class='text-4xl'>
             <i class='devicon-react-original'></i>
           </p>
-          <p class='is-size-5'>React</p>
+          <p class='text-xl'>React</p>
         </div>
       </li>
-      <li>
-        <div>
-          <p class='icon is-size-2'>
+      <!-- Node.js -->
+      <li class='inline-block'>
+        <div class='w-[150px]'>
+          <p class='text-4xl'>
             <i class='devicon-nodejs-plain'></i>
           </p>
-          <p class='is-size-5'>Node.js</p>
+          <p class='text-xl'>Node.js</p>
         </div>
       </li>
-      <li>
-        <div>
-          <p class='icon is-size-2'>
+      <!-- MySQL -->
+      <li class='inline-block'>
+        <div class='w-[150px]'>
+          <p class='text-4xl'>
             <i class='devicon-mysql-original'></i>
           </p>
-          <p class='is-size-5'>MySQL</p>
+          <p class='text-xl'>MySQL</p>
         </div>
       </li>
-      <li>
-        <div>
-          <p class='icon is-size-2'>
+      <!-- Bash -->
+      <li class='inline-block'>
+        <div class='w-[150px]'>
+          <p class='text-4xl'>
             <i class='devicon-bash-plain'></i>
           </p>
-          <p class='is-size-5'>Bash</p>
+          <p class='text-xl'>Bash</p>
         </div>
       </li>
-      <li>
-        <div>
-          <p class='icon is-size-2'>
+      <!-- Django -->
+      <li class='inline-block'>
+        <div class='w-[150px]'>
+          <p class='text-4xl'>
             <i class='devicon-django-plain'></i>
           </p>
-          <p class='is-size-5'>Django</p>
+          <p class='text-xl'>Django</p>
         </div>
       </li>
-      <li>
-        <div>
-          <p class='icon is-size-2'>
+      <!-- Flask -->
+      <li class='inline-block'>
+        <div class='w-[150px]'>
+          <p class='text-4xl'>
             <i class='devicon-flask-original'></i>
           </p>
-          <p class='is-size-5'>Flask</p>
+          <p class='text-xl'>Flask</p>
         </div>
       </li>
-      <li>
-        <div>
-          <p class='icon is-size-2'>
+      <!-- Bulma -->
+      <li class='inline-block'>
+        <div class='w-[150px]'>
+          <p class='text-4xl'>
             <i class='devicon-bulma-plain'></i>
           </p>
-          <p class='is-size-5'>Bulma</p>
+          <p class='text-xl'>Bulma</p>
         </div>
       </li>
-      <li>
-        <div>
-          <p class='icon is-size-2'>
+      <!-- Webpack -->
+      <li class='inline-block'>
+        <div class='w-[150px]'>
+          <p class='text-4xl'>
             <i class='devicon-webpack-plain'></i>
           </p>
-          <p class='is-size-5'>Webpack</p>
+          <p class='text-xl'>Webpack</p>
         </div>
       </li>
-      <li>
-        <div>
-          <p class='icon is-size-2'>
+      <!-- Nginx -->
+      <li class='inline-block'>
+        <div class='w-[150px]'>
+          <p class='text-4xl'>
             <i class='devicon-nginx-original'></i>
           </p>
-          <p class='is-size-5'>nginx</p>
+          <p class='text-xl'>nginx</p>
         </div>
       </li>
-      <li>
-        <div>
-          <p class='icon is-size-2'>
+      <!-- jQuery -->
+      <li class='inline-block'>
+        <div class='w-[150px]'>
+          <p class='text-4xl'>
             <i class='devicon-jquery-plain'></i>
           </p>
-          <p class='is-size-5'>Jquery</p>
+          <p class='text-xl'>jQuery</p>
         </div>
       </li>
-      <li>
-        <div>
-          <p class='icon is-size-2'>
+      <!-- Docker -->
+      <li class='inline-block'>
+        <div class='w-[150px]'>
+          <p class='text-4xl'>
             <i class='devicon-docker-plain'></i>
           </p>
-          <p class='is-size-5'>Docker</p>
+          <p class='text-xl'>Docker</p>
         </div>
       </li>
-      <li>
-        <div>
-          <p class='icon is-size-2'>
+      <!-- Redux -->
+      <li class='inline-block'>
+        <div class='w-[150px]'>
+          <p class='text-4xl'>
             <i class='devicon-redux-original'></i>
           </p>
-          <p class='is-size-5'>Redux</p>
+          <p class='text-xl'>Redux</p>
         </div>
       </li>
-      <li>
-        <div>
-          <p class='icon is-size-2'>
+      <!-- ElectronJS -->
+      <li class='inline-block'>
+        <div class='w-[150px]'>
+          <p class='text-4xl'>
             <i class='devicon-electron-original'></i>
           </p>
-          <p class='is-size-5'>ElectronJS</p>
+          <p class='text-xl'>ElectronJS</p>
         </div>
       </li>
-      <li>
-        <div>
-          <p class='icon is-size-2'>
+      <!-- AWS -->
+      <li class='inline-block'>
+        <div class='w-[150px]'>
+          <p class='text-4xl'>
             <i class='devicon-amazonwebservices-plain-wordmark'></i>
           </p>
-          <p class='is-size-5'>AWS</p>
+          <p class='text-xl'>AWS</p>
         </div>
       </li>
-      <li>
-        <div>
-          <p class='icon is-size-2'>
+      <!-- MaterialUI -->
+      <li class='inline-block'>
+        <div class='w-[150px]'>
+          <p class='text-4xl'>
             <i class='devicon-materialui-plain'></i>
           </p>
-          <p class='is-size-5'>MaterialUI</p>
+          <p class='text-xl'>MaterialUI</p>
         </div>
       </li>
-      <li>
-        <div>
-          <p class='icon is-size-2'>
+      <!-- Django REST -->
+      <li class='inline-block'>
+        <div class='w-[150px]'>
+          <p class='text-4xl'>
             <i class='devicon-djangorest-plain'></i>
           </p>
-          <p class='is-size-5'>Django REST</p>
+          <p class='text-xl'>Django REST</p>
         </div>
       </li>
-      <li>
-        <div>
-          <p class='icon is-size-2'>
+      <!-- Git -->
+      <li class='inline-block'>
+        <div class='w-[150px]'>
+          <p class='text-4xl'>
             <i class='devicon-git-plain'></i>
           </p>
-          <p class='is-size-5'>Git</p>
+          <p class='text-xl'>Git</p>
         </div>
       </li>
-      <li>
-        <div>
-          <p class='icon is-size-2'>
+      <!-- PostgreSQL -->
+      <li class='inline-block'>
+        <div class='w-[150px]'>
+          <p class='text-4xl'>
             <i class='devicon-postgresql-plain'></i>
           </p>
-          <p class='is-size-5'>PostgreSQL</p>
+          <p class='text-xl'>PostgreSQL</p>
         </div>
       </li>
+      <!-- Add more items if needed -->
     </ul>
   </div>
 </section>
 
-<style lang='scss'>
+<style>
   @import url('https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css');
 
-  .list-wrapper {
-    padding-top: 2em;
-    width: 100%;
-    overflow-x: hidden;
-    white-space: nowrap;
+  .animate-scroll {
+    animation: scroll 60s linear infinite;
+  }
 
-    .scrolling-list {
-      display: flex;
-      animation: scroll 60s linear infinite;
-
-      li {
-        display: inline-block;
-
-        div {
-          width: 150px;
-        }
-      }
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
     }
-    .scrolling-list li {
-      display: inline-block;
-    }
-
-    @keyframes scroll {
-      0% {
-        transform: translateX(100%);
-      }
-      100% {
-        transform: translateX(-200%);
-      }
+    100% {
+      transform: translateX(-200%);
     }
   }
 </style>

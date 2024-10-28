@@ -1,13 +1,9 @@
 ---
-interface Props {
-  alignment: 'left' | 'right';
-}
 
-const { alignment } = Astro.props;
 ---
 
-<section class={`colored-container ${alignment}-sided .neon-border`}>
-  <h1 class='title is-3'>About Me</h1>
+<section class='bg-white w-fit p-5 m-10 rounded-md lg:ml-auto'>
+  <h1 class='text-xl'>About Me</h1>
   <p>
     I love well implemented technology at the service of society.
     <br />
