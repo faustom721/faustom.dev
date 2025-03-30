@@ -1,8 +1,9 @@
 ---
+import RightSection from './RightSection.astro';
 const yearsOfExperience = new Date().getFullYear() - 2018;
 ---
 
-<section class='bg-white'>
+<RightSection>
   <h1 class='text-3xl font-bold'>Skills</h1>
   <p>
     I am a full-stack software developer with {yearsOfExperience} years of experience,
@@ -16,7 +17,7 @@ const yearsOfExperience = new Date().getFullYear() - 2018;
       >I possess experience working with the following technologies:</strong
     >
   </p>
-  <div class='pt-8 w-full overflow-hidden whitespace-nowrap bg-white'>
+  <div class='pt-8 overflow-hidden whitespace-nowrap bg-white'>
     <ul class='flex animate-scroll text-center'>
       <!-- Technology Item Start -->
       <li class='inline-block'>
@@ -265,21 +266,21 @@ const yearsOfExperience = new Date().getFullYear() - 2018;
       <!-- Add more items if needed -->
     </ul>
   </div>
-</section>
 
-<style>
-  @import url('https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css');
+  <style>
+    @import url('https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css');
 
-  .animate-scroll {
-    animation: scroll 60s linear infinite;
-  }
-
-  @keyframes scroll {
-    0% {
-      transform: translateX(100%);
+    .animate-scroll {
+      animation: scroll 60s linear infinite;
     }
-    100% {
-      transform: translateX(-200%);
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-200%);
+      }
     }
-  }
-</style>
+  </style>
+</RightSection>
