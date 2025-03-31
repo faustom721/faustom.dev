@@ -1,5 +1,6 @@
 ---
 import LeftSection from './LeftSection.astro';
+import ProjectCard from './ProjectCard.astro';
 ---
 
 <LeftSection>
@@ -9,4 +10,28 @@ import LeftSection from './LeftSection.astro';
     open-source, and I love to contribute to the community. I'm also a
     self-taught designer and I love to create beautiful things.
   </p>
+  <div>
+    <div class='pt-8 overflow-hidden whitespace-nowrap -mx-5'>
+      <ul class='flex animate-scroll text-center'>
+        <!-- Project Item Start -->
+        <li class='inline-block'>
+          <ProjectCard
+            title='Project 1'
+            description='Description of project 1'
+            link='https://example.com'
+          />
+        </li>
+        <!-- Project Item End -->
+        <!-- Project Item Start -->
+        <li class='inline-block'>
+          <ProjectCard
+            title='Project 2'
+            description='Description of project 2'
+            link='https://example.com'
+          />
+        </li>
+        <!-- Project Item End -->
+      </ul>
+    </div>
+  </div>
 </LeftSection>
