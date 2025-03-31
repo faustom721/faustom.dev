@@ -1,5 +1,7 @@
 ---
 import LeftSection from './LeftSection.astro';
+import Button from './Button.astro';
+import resume from '../assets/files/fausto_marquez_resume.pdf';
 ---
 
 <LeftSection>
@@ -20,5 +22,13 @@ import LeftSection from './LeftSection.astro';
     me to enhance my skills and evolve every day.
   </p>
   <br />
-  <p><b>I'm a fan of doing things right.</b></p>
+  <p>
+    <b>I'm a fan of doing things right.</b>
+    <Button
+      text='Download my resume'
+      class='float-right'
+      target='_blank'
+      href={resume}
+    />
+  </p>
 </LeftSection>

@@ -17,7 +17,7 @@ const yearsOfExperience = new Date().getFullYear() - 2018;
       >I possess experience working with the following technologies:</strong
     >
   </p>
-  <div class='pt-8 overflow-hidden whitespace-nowrap -mx-5'>
+  <div class='pt-8 overflow-hidden whitespace-nowrap -mx-5 text-indigo-900'>
     <ul class='flex animate-scroll text-center'>
       <!-- Technology Item Start -->
       <li class='inline-block'>
@@ -61,7 +61,7 @@ const yearsOfExperience = new Date().getFullYear() - 2018;
           <p class='text-4xl'>
             <i class='devicon-html5-plain'></i>
           </p>
-          <p class='text-xl'>HTML5</p>
+          <p class='text-xl'>HTML</p>
         </div>
       </li>
       <!-- Continue adding technology items as per your original list -->
@@ -71,7 +71,7 @@ const yearsOfExperience = new Date().getFullYear() - 2018;
           <p class='text-4xl'>
             <i class='devicon-css3-plain'></i>
           </p>
-          <p class='text-xl'>CSS3</p>
+          <p class='text-xl'>CSS</p>
         </div>
       </li>
       <!-- Sass -->
@@ -144,6 +144,15 @@ const yearsOfExperience = new Date().getFullYear() - 2018;
             <i class='devicon-django-plain'></i>
           </p>
           <p class='text-xl'>Django</p>
+        </div>
+      </li>
+      <!-- Elasticsearch -->
+      <li class='inline-block'>
+        <div class='w-[150px]'>
+          <p class='text-4xl'>
+            <i class='devicon-elasticsearch-plain'></i>
+          </p>
+          <p class='text-xl'>Elasticsearch</p>
         </div>
       </li>
       <!-- Flask -->
@@ -272,6 +281,12 @@ const yearsOfExperience = new Date().getFullYear() - 2018;
 
     .animate-scroll {
       animation: scroll 60s linear infinite;
+    }
+
+    @media (max-width: 768px) {
+      .animate-scroll {
+        animation: scroll 30s linear infinite;
+      }
     }
 
     @keyframes scroll {
