@@ -16,6 +16,9 @@ Visit the website at [faustom.dev](https://faustom.dev)
 ├── public/
 │   └── favicon.svg
 ├── src/
+│   ├── assets/
+│   │   ├── files/_all the files_
+│   │   └── images/_all the images_
 │   ├── components/
 │   │   └── _all the components_
 │   ├── layouts/
