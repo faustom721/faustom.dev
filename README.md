@@ -9,6 +9,7 @@ Visit the website at [faustom.dev](https://faustom.dev)
 ## Tech Stack
 - **Astro** as the project framework. (https://astro.build/)
 - **TailwindCSS** for styling. (https://tailwindcss.com/). I use it as an Astro integration.
+- **Web 3 Forms** integration for the contact form. (https://web3forms.com/)
 
 ## Project Structure
 ```text
@@ -27,7 +28,9 @@ Visit the website at [faustom.dev](https://faustom.dev)
 │       └── _all the pages_
 ├── astro.config.mjs
 ├── .gitignore
-├── .prettierrc
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
 ├── README.md
 ├── tsconfig.json
 └── package.json
