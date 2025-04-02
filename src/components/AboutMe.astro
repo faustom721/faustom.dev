@@ -2,15 +2,31 @@
 import LeftSection from './LeftSection.astro';
 import Button from './Button.astro';
 import resume from '../assets/files/fausto_marquez_resume.pdf';
+
+const yearsOfExperience = new Date().getFullYear() - 2018;
 ---
 
 <LeftSection>
   <h1 class='text-3xl font-bold'>About Me</h1>
+  <p class='text-lg'>
+    <span class='mr-2 -ml-1 px-1 bg-indigo-100'>Skilled in Django & React</span>
+    |
+    <span class='mx-2 px-1 bg-indigo-100'
+      >Passionate about Tech Development</span
+    >
+    |
+    <span class='ml-2 px-1 bg-indigo-100'
+      >+{yearsOfExperience} Years of Experience</span
+    >
+  </p>
+  <br />
   <p>
-    I love well implemented technology at the service of society.
+    Committed to well implemented technology serving society, I have been part
+    of the tech world for over {yearsOfExperience} years, beginning my journey in
+    2018.
     <br />
-    I'm always seeking for new interesting challenges from which to grow professionally;
-    improving practices and learning new technologies.
+    Always eager for new and exciting challenges, I strive to grow professionally,
+    refine best practices, and explore innovative technologies.
   </p>
   <br />
   <p>
@@ -18,8 +34,8 @@ import resume from '../assets/files/fausto_marquez_resume.pdf';
     the people who get up and look for the circumstances they want, and if they
     can't find them, make them”.
     <br />
-    This insightful perspective fuels my passion for continuous learning, pushing
-    me to enhance my skills and evolve every day.
+    This mindset fuels my passion for continuous learning, driving me to enhance
+    my skills and evolve every day.
   </p>
   <br />
   <p>
