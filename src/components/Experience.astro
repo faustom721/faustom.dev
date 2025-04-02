@@ -11,10 +11,12 @@ import ProjectCard from './ProjectCard.astro';
     self-taught designer and I love to create beautiful things.
   </p>
   <div>
-    <div class='pt-8 pb-5 overflow-x-scroll whitespace-nowrap -mx-5'>
+    <div
+      class='pt-8 overflow-x-scroll overflow-y-clip whitespace-nowrap -mx-5 px-3'
+    >
       <ul class='flex text-center'>
         <!-- Project Item Start -->
-        <li class='inline-block mx-2'>
+        <li>
           <ProjectCard
             title='Project 1'
             description='Description of project 1'
@@ -23,7 +25,7 @@ import ProjectCard from './ProjectCard.astro';
         </li>
         <!-- Project Item End -->
         <!-- Project Item Start -->
-        <li class='inline-block mx-2'>
+        <li>
           <ProjectCard
             title='Project 2'
             description='Description of project 2'
