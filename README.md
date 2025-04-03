@@ -15,7 +15,6 @@ Visit the website at [faustom.dev](https://faustom.dev)
 ```text
 /
 ├── public/
-│   └── favicon.svg
 ├── src/
 │   ├── assets/
 │   │   ├── files/_all the files_

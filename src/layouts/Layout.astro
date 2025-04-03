@@ -1,5 +1,7 @@
 ---
 const { title } = Astro.props;
+
+const wip = true
 ---
 
 <!doctype html>
@@ -8,7 +10,6 @@ const { title } = Astro.props;
     <meta charset='UTF-8' />
     <meta name='description' content='Astro description' />
     <meta name='viewport' content='width=device-width' />
-    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta name='generator' content={Astro.generator} />
     <title>{title}</title>
 
@@ -23,5 +24,40 @@ const { title } = Astro.props;
     >
       <slot />
     </div>
+    { wip && (
+      <div
+        class='fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-10 overflow-hidden'
+      >  
+        <p class='text-white text-2xl font-bold'>
+          Work in progress
+          <>
+            <span class='dot-1'>.</span>
+            <span class='dot-2'>.</span>
+            <span class='dot-3'>.</span>
+          </>
+        </p>
+        <style>
+          @keyframes blink {
+            0%,
+            100% {
+              opacity: 0;
+            }
+            50% {
+              opacity: 1;
+            }
+          }
+          .dot-1 {
+            animation: blink 1.5s infinite;
+          }
+          .dot-2 {
+            animation: blink 1.5s infinite 0.3s;
+          }
+          .dot-3 {
+            animation: blink 1.5s infinite 0.6s;
+          }
+        </style>
+      </div>
+     )
+    }
   </body>
 </html>
