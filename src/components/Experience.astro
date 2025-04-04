@@ -1,39 +1,51 @@
 ---
 import LeftSection from './LeftSection.astro';
-import ProjectCard from './ProjectCard.astro';
+import TimelineItem from './TimelineItem.astro';
 ---
 
 <LeftSection>
   <h1 class='text-3xl font-bold'>Experience</h1>
   <p>
-    I'm a software engineer who loves to build things. I'm passionate about
-    open-source, and I love to contribute to the community. I'm also a
-    self-taught designer and I love to create beautiful things.
-  </p>
-  <div>
-    <div
-      class='pt-8 overflow-x-scroll overflow-y-clip whitespace-nowrap -mx-5 px-3'
+    A couple of succesful projects I collaborate on, and a few more I’m working
+    on.
+    <br />
+    <a href='#aboutme-target' class='text-indigo-800'
+      >Download my CV to see more</a
     >
-      <ul class='flex text-center'>
-        <!-- Project Item Start -->
-        <li>
-          <ProjectCard
-            title='Project 1'
-            description='Description of project 1'
-            link='https://example.com'
-          />
-        </li>
-        <!-- Project Item End -->
-        <!-- Project Item Start -->
-        <li>
-          <ProjectCard
-            title='Project 2'
-            description='Description of project 2'
-            link='https://example.com'
-          />
-        </li>
-        <!-- Project Item End -->
-      </ul>
+  </p>
+  <section class='relative flex flex-col overflow-hidden'>
+    <div class='w-full max-w-6xl mx-auto px-4 md:px-6'>
+      <div class='flex flex-col justify-center divide-y [&>*]:py-16'>
+        <div class='w-full max-w-3xl mx-auto'>
+          <div
+            class='space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent'
+          >
+            <TimelineItem
+              title='Cybersecurity SaaS'
+              date='2018'
+              description={`Participated in the architectural migration of a monolithic
+                        application to a web service-oriented architecture. Mainly in charge of the front-end development.`}
+              tags={[
+                'Django REST Framework',
+                'MySQL',
+                'JQuery',
+                'Handlebars',
+                'Bootstrap',
+                'Sass',
+              ]}
+            />
+            <TimelineItem
+              title='Food industry platforms group'
+              date='2019'
+              description={`Worked eliminating technical debt in a monolithic application. Later
+                        developing new features and a whole new application to fulfill business needs. Focusing on logistics and grouping orders for costs optimization.`}
+              tags={['Django', 'PostgreSQL', 'React', 'Redux', 'Material UI']}
+              <
+              div
+            />
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</LeftSection>
+  </section></LeftSection
+>
