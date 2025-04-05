@@ -2,7 +2,36 @@
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class='bg-zinc-50 border-t-2 border-indigo-600/20 p-5'>
-  <p class='mb-3'><a href='mailto:hello@faustom.dev'>hello@faustom.dev</a></p>
-  <p>Fausto Márquez - {currentYear}. All rights reserved.</p>
+<footer
+  class='bg-zinc-50 border-t-2 border-indigo-600/20 p-5 flex items-center justify-between flex-col md:flex-row gap-5'
+>
+  <div class='text-center md:text-left'>
+    <p class='mb-3 text-indigo-800'>
+      <a href='mailto:hello@faustom.dev'>hello@faustom.dev</a>
+    </p>
+    <p>Fausto Márquez - {currentYear}. All rights reserved.</p>
+  </div>
+  <div class='text-center md:text-right'>
+    <p>
+      <a
+        href='https://github.com/faustom721/faustom.dev'
+        target='_blank'
+        rel='noopener'
+        class='bg-gradient-to-tr from-indigo-100/70 to-indigo-100/50 border-2 border-indigo-600/20 rounded-lg p-1'
+      >
+        <i class='devicon-github-original text-xl align-sub'></i>
+        <span class='text-sm font-medium'>wanna see the code?</span>
+      </a>
+    </p>
+    <p class='mt-3'>
+      <a href='https://astro.build' target='_blank' rel='noopener'>
+        <img
+          src='https://astro.badg.es/v2/built-with-astro/small.svg'
+          alt='Built with Astro'
+          width='192'
+          height='32'
+        /></a
+      >
+    </p>
+  </div>
 </footer>
