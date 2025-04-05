@@ -4,25 +4,22 @@ import TimelineItem from './TimelineItem.astro';
 ---
 
 <LeftSection>
-  <h1 class='text-3xl font-bold'>Experience</h1>
+  <h1 class='text-3xl font-bold'>Key Experiences in My Developer Journey</h1>
   <p>
-    A couple of succesful projects I collaborate on, and a few more I’m working
-    on.
-    <br />
-    <a href='#aboutme-target' class='text-indigo-800'
-      >Download my CV to see more</a
-    >
+    For more details downlaod my resume <a
+      href='#aboutme-target'
+      class='text-indigo-800'>here</a
+    >.
   </p>
   <section class='relative flex flex-col overflow-hidden'>
     <div class='w-full max-w-6xl mx-auto px-4 md:px-6'>
       <div class='flex flex-col justify-center divide-y [&>*]:py-16'>
         <div class='w-full max-w-3xl mx-auto'>
           <div
-            class='space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent'
+            class='space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-indigo-600/20 before:to-transparent'
           >
             <TimelineItem
-              title='Cybersecurity SaaS'
-              date='2018'
+              title='Cybersecurity'
               description={`Participated in the architectural migration of a monolithic
                         application to a web service-oriented architecture. Mainly in charge of the front-end development.`}
               tags={[
@@ -35,17 +32,42 @@ import TimelineItem from './TimelineItem.astro';
               ]}
             />
             <TimelineItem
-              title='Food industry platforms group'
-              date='2019'
+              title='Food Industry'
               description={`Worked eliminating technical debt in a monolithic application. Later
                         developing new features and a whole new application to fulfill business needs. Focusing on logistics and grouping orders for costs optimization.`}
               tags={['Django', 'PostgreSQL', 'React', 'Redux', 'Material UI']}
-              <
-              div
+            />
+            <TimelineItem
+              title='Healthcare Industry'
+              description={`Redesigned the system architecture into a "core functionalities and flavors" pattern, 
+                        inspired by the Decorator pattern. Led a small team to refactor branch security models, implement CI/CD pipelines, 
+                        and automate API documentation, all while maintaining active platforms and ensuring scalability for future business needs.`}
+              tags={[
+                'Django',
+                'PostgreSQL',
+                'React',
+                'AWS',
+                'Material UI',
+                'NodeJS',
+              ]}
+            /><TimelineItem
+              title='E-commerce and Digital Marketing'
+              description={`Contributed to the migration of a high-traffic checkout system for a large e-commerce group serving over 30 million monthly users. 
+                          Played a key role in ensuring a smooth transition while maintaining platform stability and scalability. Worked closely with teams to enhance back-office applications and integrations, 
+                          streamlining workflows and improving operational efficiency. 
+                          Additionally, supported the development of a real-time marketing platform by migrating data flows to Elasticsearch, 
+                          optimizing query performance, and improving scalability to enable dynamic, data-driven marketing strategies.`}
+              tags={[
+                'React',
+                'PostgreSQL',
+                'Elasticsearch',
+                'Tailwind CSS',
+                'NodeJS',
+              ]}
             />
           </div>
         </div>
       </div>
     </div>
-  </section></LeftSection
->
+  </section>
+</LeftSection>
